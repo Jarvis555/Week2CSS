@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson Music Shop</title>
+    <style>
+        .bnc{
+            text-align: center;
+            font-weight: bold;
+            color: darkred;
+        }
+        #bestsellers tr:nth-child(even) {
+            background-color: lightblue;
+        }
+
+        #bestsellers tr:nth-child(odd) {
+            background-color: rgb(153, 144, 238);
+        }
+        #bestsellers tr:hover {
+            background-color: indianred;
+        }
+    </style>
+</head>
+
+<body>
+    <table width =55% border="1" cellspacing=0 cellpadding=5 id="bestsellers">
+        <tr align="center">
+            <td><b>Artist</b></td>
+            <td><b>Ablums</b></td>
+            <td><b>Release</b></td>
+            <td><b>Genre</b></td>
+            <td><b>Total Certified Copies</b></td>
+        </tr>
+        <tr align="center">
+            <td>Micheal Jackson</td>
+            <td>Thriller</td>
+            <td>1982</td>
+            <td>Pop,post-disco funk, and rock</td>
+            <td class = "bnc">47.3</td>
+        </tr>
+        <tr align="center">
+            <td>ACDC</td>
+            <td>Back and Black</td>
+            <td>1980</td>
+            <td>Hard Rock</td>
+            <td class = "bnc">29.4</td>
+        </tr>
+        <tr align="center">
+            <td>Meat Loaf</td>
+            <td>Bat Out Of Hell</td>
+            <td>1977</td>
+            <td>Hard rock, glam rock, heavy metal</td>
+            <td class = "bnc">21.7</td>
+        </tr>
+        <tr align="center">
+            <td>Pink Floyd</td>
+            <td>The Dark Side od the Moon</td>
+            <td>1973</td>
+            <td>Progressive rock</td>
+            <td class = "bnc">24.2</td>
+        </tr>
+        <tr align="center">
+            <td>Whitney Houston</td>
+            <td>The Bodyguard</td>
+            <td>1992</td>
+            <td>R&B, soul, pop, soundtrack</td>
+            <td class = "bnc">28.4</td>
+        </tr>
+        <tr align="center">
+            <td>Eagles</td>
+            <td>Their Greatest Hits(1971-1975)</td>
+            <td>1976</td>
+            <td>Country rock, soft rock, folk rock</td>
+            <td class = "bnc">41.2</td>
+        </tr>
+        <tr align="center">
+            <td>Bee Gee</td>
+            <td>Saturday Night Fever</td>
+            <td>1977</td>
+            <td>Disco</td>
+            <td class = "bnc">21.6</td>
+        </tr>
+        <tr align="center">
+            <td>Fleetwood Mac</td>
+            <td>Rumonus</td>
+            <td>1977</td>
+            <td>soft rock</td>
+            <td class = "bnc">27.9</td>
+        </tr>
+    </table>
+    <form action="" method="post">
+        <label for=""><b>First Name</b></label>
+        <input type="text" name="" id="">
+        <br>
+        <label for=""><b>Last Name</b></label>
+        <input type="text" name="" id="">
+        <br>
+        <label for=""><b>Phone Number</b></label>
+        <input type="tel" name="" id="">
+        <br>
+        <label for=""><b>Email</b></label>
+        <input type="email" name="" id="">
+        <br>
+        <label for=""><b>Age</b></label>
+        <input type="number" name="" id="">
+        <br>
+        <input type="submit" value="Go" style="font-weight: bold;">
+    </form>
+</body>
+
+</html>

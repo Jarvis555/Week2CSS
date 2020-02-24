@@ -1,0 +1,15 @@
+header{
+    background-image: url("../images/wavy\ lines.png");
+    height: 200px;
+}
+body{
+    background: url("../images/film.jfif")top / cover no-repeat fixed;
+    
+}
+footer{
+    background-image: url("../images/wavy\ lines.png");
+    height: 55px;
+}
+footer em, strong{
+    background: white;
+}

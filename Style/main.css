@@ -1,11 +1,74 @@
-body{
+body {
     background: url("../images/The\ Anthropomorphic\ Cabinet.jpg") top / cover no-repeat fixed;
     color: white;
+    margin: 0px;
+    font: 100% verdana, sans-serif;
 }
-h1{
-    background-color: lightgray;
-    color: blue;
+
+header {
+    background-color: #98644e;
+    color: white;
+    padding: 30px;
+    margin: 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
-footer{
-    background-color: chocolate;
+
+.navbar-primary ul {
+    margin: 0px;
+    background-color: #62433f;
+    position: absolute;
+    top: 80p;
+    left: 0;
+    width: 100%;
+}
+
+.navbar-primary ul li {
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+}
+
+.navbar-primary a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+   font-family: 'Adelle W01 Bold', 'Arvo', Constantia, "Lucida Bright", Lucidabright,
+   "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+.banner {
+    width: 20%;
+    height: 10%;
+}
+
+.quote {
+    width: 35%;
+}
+
+.center-in-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    margin-top: 120px;
+}
+
+figure {
+    border: 5px double #62433f;
+    background-color: #98644e;
+    padding: 5px;
+    display: table;
+}
+
+footer {
+    background-color: #62433f;
+    padding: 10px;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }

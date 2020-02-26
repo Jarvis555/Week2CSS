@@ -1,5 +1,5 @@
 header{
-    background-image: url("../images/wavy\ lines.png");
+    background-image: url("../images/wavy\ lines.jpg");
     height: 200px;
 }
 body{
@@ -7,7 +7,7 @@ body{
     
 }
 footer{
-    background-image: url("../images/wavy\ lines.png");
+    background-image: url("../images/wavy\ lines.jpg");
     height: 55px;
 }
 footer em, strong{

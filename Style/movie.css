@@ -1,15 +1,83 @@
-header{
+header {
     background-image: url("../images/wavy\ lines.jpg");
-    height: 200px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
-body{
+
+.navbar-primary ul {
+    margin: 0px;
+    background-color: black;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+}
+
+.navbar-primary ul li {
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+}
+
+.navbar-primary a {
+    text-decoration: none;
+    color: white;
+   
+}
+
+
+h1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif
+}
+
+body {
     background: url("../images/film.jfif")top / cover no-repeat fixed;
-    
+
 }
-footer{
+
+.banner {
+    width: 20%;
+    height: 10%;
+}
+
+.quote {
+    background-color: black;
+    color: white;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.center-in-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    margin-top: 150px;  
+}
+
+footer {
     background-image: url("../images/wavy\ lines.jpg");
-    height: 55px;
-}
-footer em, strong{
-    background: white;
+    height: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+
+
 }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APOD</title>
+</head>
+
+<body style="text-align: center; background-color: dimgray;">
+    <h2 style="text-align: center;">Astronomy Picture of The Day</h2>
+    <button type="button" onclick="loadAPOD()">Get Image</button>
+    <script>
+        function loadAPOD() {
+            fetch('https://api.nasa.gov/planetary/apod?api_key=RoCyZDbW1Iqg9zti3GbOJnSbfN7IcIKbuAeKfQgf')
+                .then(response => response.json())
+                .then(apod => showData(apod));
+        }
+        function showData(apod){
+            console.log(apod)
+            let date = document.getElementById('date') 
+            let explaination = document.getElementById('explanation');
+            let title = document.getElementById('title');
+            let img = document.getElementById('img')
+            let myDate = apod.date;
+            let myExplanation = apod.explanation;
+            let myTitle = apod.title;
+            let myImg = apod.url;
+
+            date.innerHTML= `<strong>Date:</strong> ${myDate}`;
+            explanation.innerHTML =  `<strong>Explanation:</strong> ${myExplanation}`;
+            title.innerHTML = `<strong>Title:</strong> ${myTitle}`;
+            img.src = myImg;
+
+        }
+    </script>
+    
+    <img id="img"></img>
+    <div id="date"></div>
+    <div id="title"></div>
+    <div id="explanation"></div>
+
+</body>
+
+</html>

@@ -10,10 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(function (myJson) {
                 console.log(myJson);
                 let movieInfo = document.getElementById("movieInfo");
+                let movie = document.getElementById("movie");
                 let title = myJson.Title;
-                movieInfo.innerHTML = title;
+                movieInfo.innerHTML = `<strong>Title:</strong> ${title}`;
                 movieInfo.innerHTML += '<br>';
-                movieInfo.innerHTML += myJson.Plot;
+                movieInfo.innerHTML += `<strong>Plot:</strong> ${myJson.Plot}`;
                 myJson.Actors.split(",").forEach(function (actor) {
                     movieInfo.innerHTML += actor + " | "
                 })
@@ -28,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 img.src = myJson.Poster;
                 img.style.width = "25vw";
                 link.appendChild(img);
-                movieInfo.appendChild(link);
+                movie.appendChild(link);
             })
 
     })

@@ -1,0 +1,21 @@
+#movie{
+    width: 40vw;
+    height: 80vh;
+    border: 2px solid black;
+    background-color: lightskyblue;
+    float: left;
+}
+#movieInfo{
+    width: 40vw;
+    height: 80vh;
+    border: 2px solid black;
+    background-color: lightseagreen;
+    float: left;
+    position: relative;
+    left: 5vw;
+}
+#movieSearch{
+    position: absolute;
+    bottom: 10vh;
+
+}

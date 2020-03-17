@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Review</title>
+    <link href="https://fonts.googleapis.com/css?family=Nosifer&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            color: black;
+            font-size: 16;
+            font-family: 'Nosifer', cursive;
+            background-color: orangered;
+            border: dashed black 2px;
+            text-align: center;
+        }
+
+        .a {
+            margin: 0px 0px 0px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="h1">HTML Review</h1>
+    <marquee behavior="scroll" direction="left">
+        <h1 class="a">Killed By Me!!!!!</h1>
+    </marquee>
+    <br>
+    <input type="color" id="color" onchange="changeColor()">
+    <br>
+    <label for="states">States</label>
+    <select name="States" id="states" onchange="updateImages()">
+        <option value="MS">Mississippi</option>
+        <option value="TX">Texas</option>
+        <option value="AR">Arkansas</option>
+        <option value="CA">California</option>
+        <option value="NY">New York</option>
+    </select>
+    <img id="img" src="" alt="" height="200px" width="300px">
+    <br>
+
+    <label for="gender">Gender</label><br>
+    <input type='radio' name="gender" id="male">
+    <label for="male">Male</label><br>
+    <input type='radio' name="gender" id="female">
+    <label for="female">Female</label><br>
+    <input type='radio' name="gender" id="other">
+    <label for="other">Other</label><br>
+
+    <label for="cc">Credit Card Type</label><br>
+    <input type="radio" name="cc" id="rbVisa" value="Visa">Visa<br>
+    <input type="radio" name="cc" id="rbMasterCard" value="MasterCard">MasterCard<br>
+    <input type="radio" name="cc" id="rbDiscover" value="Discover">Discover<br </body> <script>
+    function changeColor(){
+    document.body.style.backgroundColor = document.getElementById('color').value;
+    }
+    function updateImages() {
+    let bgColor
+    let img = document.getElementById('img');
+    let state = document.getElementById('states').value;
+    if (state == 'MS') {
+    img.src = 'images/MS.jfif';
+    }
+    if (state == 'TX') {
+    img.src = 'images/TX.jfif';
+    }
+    if (state == 'AR') {
+    img.src = 'images/AR.jfif';
+    }
+    if (state == 'CA') {
+    img.src = 'images/CA.jfif';
+    }
+    if (state == 'NY') {
+    img.src = 'images/NY.jfif';
+    }
+
+
+    }
+    </script>
+
+    </html>
